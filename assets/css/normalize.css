@@ -196,7 +196,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+ appearance: button; /* Standard property for compatibility */
+ -webkit-appearance: button;
 }
 
 /**
@@ -288,6 +289,7 @@ textarea {
  */
 
 [type="search"] {
+  appearance: textfield; /* Standard property for compatibility */
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
